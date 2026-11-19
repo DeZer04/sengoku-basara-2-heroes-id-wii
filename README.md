@@ -1,5 +1,10 @@
 # Sengoku Basara 2 Heroes — Terjemahan Bahasa Indonesia
 
+> **Repo uji coba versi Wii.** Salinan dari [DeZer04/sengoku-basara-2-heroes-id](https://github.com/DeZer04/sengoku-basara-2-heroes-id)
+> ditambah patcher Wii (RBSJ08): **https://dezer04.github.io/sengoku-basara-2-heroes-id-wii/patcher-wii.html**
+> File patch Wii belum dirilis publik; tester mendapatkannya langsung dari DeZer04. Game harus dalam format RVZ
+> (ubah di Dolphin: Convert File → RVZ, Zstandard).
+
 Patch terjemahan penggemar untuk **Sengoku Basara 2 Heroes** (PlayStation 2, Jepang, SLPM-66848).
 Patched by **DeZer04**.
 

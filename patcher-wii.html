@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Patcher Basara 2 Wii ID</title>
+<style>
+:root {
+  --bg: #f4f1ea; --card: #fffdf8; --fg: #1d1b18; --muted: #6b655c; --line: #ddd5c6;
+  --accent: #a3201a; --accent-fg: #fff; --gold: #b8892b; --ok: #1f7a3a; --bad: #b3261e; --bar: #e8e1d3;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15130f; --card: #1f1c17; --fg: #eee8dc; --muted: #a39b8e; --line: #3a352d;
+    --accent: #d2382d; --accent-fg: #fff; --gold: #d9aa4a; --ok: #5cc27a; --bad: #ff7a6e; --bar: #2d2922;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #15130f; --card: #1f1c17; --fg: #eee8dc; --muted: #a39b8e; --line: #3a352d;
+  --accent: #d2382d; --accent-fg: #fff; --gold: #d9aa4a; --ok: #5cc27a; --bad: #ff7a6e; --bar: #2d2922;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 600px; margin: 0 auto; padding: 24px 16px 40px; }
+header { border-left: 5px solid var(--accent); padding: 2px 0 2px 14px; margin-bottom: 22px; }
+header h1 { font-size: 1.45rem; line-height: 1.2; margin: 0; letter-spacing: .01em; }
+header p { margin: 4px 0 0; color: var(--muted); }
+.tag { display: inline-block; font-size: .75rem; font-weight: 700; padding: 1px 7px; border-radius: 5px; background: var(--gold);
+       color: #fff; vertical-align: 3px; margin-left: 4px; }
+.step { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+.step h2 { font-size: 1rem; margin: 0 0 10px; display: flex; gap: 10px; align-items: center; }
+.num { flex: none; width: 26px; height: 26px; border-radius: 50%; background: var(--gold); color: #fff; font-size: .85rem;
+       display: inline-flex; align-items: center; justify-content: center; }
+.pick { display: inline-block; position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: 8px;
+        padding: 9px 14px; cursor: pointer; background: var(--bg); font-weight: 600; }
+.pick input { position: absolute; inset: 0; opacity: 0; cursor: pointer; font-size: 0; }
+.pick:focus-within { outline: 2px solid var(--gold); outline-offset: 2px; }
+.file { margin-top: 8px; font-size: .9rem; color: var(--muted); word-break: break-all; }
+.st { margin-top: 6px; font-size: .92rem; }
+.st.ok { color: var(--ok); } .st.bad { color: var(--bad); }
+button#go { width: 100%; border: 0; border-radius: 10px; padding: 14px; font: inherit; font-weight: 700; font-size: 1.05rem;
+            background: var(--accent); color: var(--accent-fg); cursor: pointer; }
+button#go:disabled { opacity: .45; cursor: not-allowed; }
+.bar { height: 10px; border-radius: 6px; background: var(--bar); overflow: hidden; margin-top: 14px; }
+.bar div { height: 100%; width: 0; background: linear-gradient(90deg, var(--accent), var(--gold)); transition: width .15s; }
+#stage { margin-top: 8px; font-size: .92rem; display: flex; justify-content: space-between; gap: 10px; }
+#stage span:last-child { color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+#msg { margin-top: 12px; padding: 12px; border-radius: 8px; display: none; font-size: .95rem; }
+#msg.ok { display: block; background: color-mix(in srgb, var(--ok) 14%, transparent); }
+#msg.bad { display: block; background: color-mix(in srgb, var(--bad) 14%, transparent); }
+.mode { font-size: .85rem; color: var(--muted); margin-top: 10px; }
+details { margin-top: 18px; border-top: 1px solid var(--line); padding-top: 12px; }
+summary { cursor: pointer; font-weight: 600; }
+details li { margin: 6px 0; }
+footer { margin-top: 24px; font-size: .82rem; color: var(--muted); }
+.free { margin: 14px 0 0; padding: 10px 12px; border: 2px solid #c8962a; border-radius: 8px; font-size: .92rem; }
+.free b { color: #c8962a; }
+.free a, footer a, details a { color: inherit; }
+code { font-size: .88em; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Sengoku Basara 2 Heroes <span class="tag">Wii</span></h1>
+    <p>Patcher terjemahan Bahasa Indonesia &middot; patched by <b>DeZer04</b></p>
+    <p class="free"><b>GRATIS.</b> Patch ini dibagikan gratis di GitHub: <a href="https://github.com/DeZer04/sengoku-basara-2-heroes-id">github.com/DeZer04/sengoku-basara-2-heroes-id</a>. Kalau kamu membayar untuk mendapatkannya, kamu tertipu. Dilarang menjual patch ini atau ISO hasil patch.</p>
+    <p><b>Versi uji coba.</b> File patch Wii belum dirilis publik; tester mendapatkannya langsung dari DeZer04.</p>
+  </header>
+
+  <section class="step">
+    <h2><span class="num">1</span>Game Wii milikmu (RVZ)</h2>
+    <label class="pick">Pilih file .rvz<input type="file" id="rvz"></label>
+    <div class="file" id="rvz-name"></div>
+    <div class="st" id="rvz-st"></div>
+  </section>
+
+  <section class="step">
+    <h2><span class="num">2</span>File patch</h2>
+    <label class="pick">Pilih file .patch<input type="file" id="patch"></label>
+    <div class="file" id="patch-name"></div>
+    <div class="st" id="patch-st"></div>
+  </section>
+
+  <section class="step">
+    <h2><span class="num">3</span>Buat ISO terjemahan</h2>
+    <button id="go" disabled>Patch sekarang</button>
+    <div class="bar"><div id="bar"></div></div>
+    <div id="stage"><span id="stage-t">Pilih file RVZ dan file patch.</span><span id="stage-p"></span></div>
+    <div id="msg"></div>
+    <div class="mode" id="mode"></div>
+  </section>
+
+  <details>
+    <summary>Bantuan</summary>
+    <ul>
+      <li>Game yang dibutuhkan: disk <b>Heroes</b> dari <b>Sengoku Basara 2 Heroes Double Pack</b> versi Jepang
+        (ID game <code>RBSJ08</code>), dump dari disk milikmu sendiri, dalam format <b>RVZ</b>.</li>
+      <li>Punya ISO atau WBFS? Ubah dulu ke RVZ di Dolphin. Di PC: klik kanan game &rarr; <i>Convert File…</i>.
+        Di Android: tekan lama game di daftar &rarr; <i>Convert File</i>. Pilih Format <b>RVZ</b>,
+        Compression <b>Zstandard</b> (bawaan), lalu Convert. File aslimu tidak diubah.</li>
+      <li>Butuh ruang kosong ±4,5 GB untuk ISO baru.</li>
+      <li>Di Chrome/Edge desktop kamu memilih lokasi simpan dulu, lalu ISO ditulis langsung ke sana. Di HP/Android,
+        ISO langsung diunduh secara streaming (hemat memori) ke folder Download; tunggu sampai unduhan selesai.</li>
+      <li>HP: biarkan layar menyala dan jangan pindah aplikasi sampai selesai. Proses memakai semua inti CPU,
+        jadi HP bisa terasa hangat.</li>
+      <li>Hasilnya dibuka di Dolphin (PC/Android). Mau lebih hemat ruang? Ubah ISO hasil ke RVZ di Dolphin
+        (±3,8 GB). Wii asli: lewat USB Loader dengan cIOS (ISO hasil memakai fakesign).</li>
+      <li>Setiap bagian ISO dicocokkan dengan patch. Kalau dump-mu berbeda (versi lain atau sudah diubah),
+        proses berhenti dengan pesan kesalahan, bukan menghasilkan ISO rusak.</li>
+      <li>Semua proses terjadi di perangkatmu. Tidak ada file yang diunggah ke mana pun.</li>
+    </ul>
+  </details>
+  <footer>Patched by DeZer04 &middot; <a href="https://github.com/DeZer04/sengoku-basara-2-heroes-id">github.com/DeZer04/sengoku-basara-2-heroes-id</a><br>Terjemahan buatan penggemar, gratis, bukan untuk dijual. Game, karakter, gambar dan musik milik CAPCOM.
+<br>Dekompresi: <a href="https://github.com/101arrowz/fzstd">fzstd</a> dan <a href="https://github.com/101arrowz/fflate">fflate</a> oleh Arjun Barrett (MIT).</footer>
+</main>
+
+<script>
+const $ = id => document.getElementById(id);
+const FSA = typeof window.showSaveFilePicker === 'function' && window.self === window.top;
+const CAN = typeof Worker === 'function' && !!(window.crypto && crypto.subtle);   // WebCrypto needs https
+let rvz = null, rvzOk = false, patch = null, hdr = null, busy = false;
+
+const gb = n => (n / 1e9).toLocaleString('id-ID', { maximumFractionDigits: 2 }) + ' GB';
+const mb = n => Math.round(n / 1e6).toLocaleString('id-ID') + ' MB';
+const str = (u8, a, b) => String.fromCharCode(...u8.subarray(a, b));
+function status(id, text, cls) { $(id).textContent = text; $(id).className = 'st ' + (cls || ''); }
+function refresh() { $('go').disabled = busy || !CAN || !(rvzOk && hdr); }
+
+function threads() {
+  let n = Math.max(1, Math.min(6, (navigator.hardwareConcurrency || 4) - 1));
+  if (navigator.deviceMemory && navigator.deviceMemory <= 3) n = Math.min(n, 2);
+  return n;
+}
+
+// quick look at the game file: RVZ of RBSJ08 with Zstandard (or no) compression; ISO / WBFS get the conversion hint
+async function checkGame(f) {
+  const h = new Uint8Array(await f.slice(0, 0x60).arrayBuffer());
+  const m = str(h, 0, 4);
+  if (m === 'RVZ\x01' || m === 'WIA\x01') {
+    const comp = (h[0x4C] << 24) | (h[0x4D] << 16) | (h[0x4E] << 8) | h[0x4F];
+    if (str(h, 0x58, 0x5E) !== 'RBSJ08') throw new Error(`Ini game lain (${str(h, 0x58, 0x5E).replace(/[^ -~]/g, '?')}). Yang dibutuhkan disk Heroes, ID RBSJ08.`);
+    if (comp !== 0 && comp !== 5) throw new Error('RVZ ini memakai kompresi selain Zstandard. Konversi ulang di Dolphin dengan Compression: Zstandard.');
+    return;
+  }
+  if (m === 'WBFS') throw new Error('Ini file WBFS. Ubah dulu ke RVZ di Dolphin (lihat Bantuan).');
+  if (str(h, 0, 6) === 'RBSJ08') throw new Error('Ini file ISO. Ubah dulu ke RVZ di Dolphin (lihat Bantuan).');
+  throw new Error('File ini bukan RVZ. Ubah dulu game-mu ke RVZ di Dolphin (lihat Bantuan).');
+}
+
+async function readPatchInfo(p) {
+  const h = new Uint8Array(await p.slice(0, 12).arrayBuffer());
+  if (str(h, 0, 8) !== 'BSR2WII2') {
+    if (h[0] === 0xd6 && h[1] === 0xc3 && h[2] === 0xc4) throw new Error('Ini patch PS2 (.xdelta). Untuk PS2 pakai patcher.html.');
+    throw new Error('File ini bukan patch Basara 2 Wii.');
+  }
+  const ml = h[8] | (h[9] << 8) | (h[10] << 16) | (h[11] << 24);
+  const man = JSON.parse(new TextDecoder().decode(await p.slice(12, 12 + ml).arrayBuffer()));
+  return { version: man.version || '', size: man.iso[0] };
+}
+
+$('mode').textContent = !CAN ? 'Browser ini tidak didukung. Pakai Chrome, Edge atau Firefox versi terbaru (halaman harus dibuka lewat https).'
+  : FSA ? 'Mode: tulis langsung ke file (desktop).'
+  : 'Mode: unduhan langsung streaming (hemat memori, cocok untuk HP/Android).';
+
+$('rvz').addEventListener('change', async e => {
+  rvz = e.target.files[0] || null; rvzOk = false;
+  $('rvz-name').textContent = rvz ? `${rvz.name} · ${gb(rvz.size)}` : '';
+  status('rvz-st', '');
+  refresh();
+  if (!rvz) return;
+  try { await checkGame(rvz); rvzOk = true; status('rvz-st', '✓ RVZ Sengoku Basara 2 Heroes (RBSJ08). Isinya diperiksa saat memproses.', 'ok'); }
+  catch (err) { status('rvz-st', '✗ ' + err.message, 'bad'); }
+  refresh();
+});
+
+$('patch').addEventListener('change', async e => {
+  patch = e.target.files[0] || null; hdr = null;
+  $('patch-name').textContent = patch ? `${patch.name} · ${mb(patch.size)}` : '';
+  status('patch-st', '');
+  refresh();
+  if (!patch) return;
+  try { hdr = await readPatchInfo(patch); status('patch-st', `✓ Patch Wii v${hdr.version} · hasil ISO ${gb(hdr.size)}.`, 'ok'); }
+  catch (err) { status('patch-st', '✗ ' + err.message, 'bad'); }
+  refresh();
+});
+
+let lastUi = 0, t0 = 0, f0 = 0, tStart = 0;
+function stage(text) { $('stage-t').textContent = text; t0 = performance.now(); f0 = -1; }
+function prog(f) {
+  const now = performance.now();
+  if (f0 < 0) { f0 = f; t0 = now; }
+  if (now - lastUi < 150 && f < 1) return;
+  lastUi = now;
+  $('bar').style.width = (f * 100).toFixed(1) + '%';
+  const el = (now - t0) / 1000, rate = el > 2 ? (f - f0) / el : 0, left = rate > 0 ? (1 - f) / rate : 0;
+  $('stage-p').textContent = Math.floor(f * 100) + '%' + (left > 3 ? ` · ±${left > 90 ? Math.round(left / 60) + ' mnt' : Math.round(left) + ' dtk'}` : '');
+}
+function message(html, cls) { $('msg').innerHTML = html; $('msg').className = cls; }
+const outName = () => `Sengoku Basara 2 Heroes (Wii) [Indonesia${hdr && hdr.version ? ' v' + hdr.version : ''}].iso`;
+const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
+
+// Streaming download via the service worker (sw.js): bytes flow to the file as they are produced, with constant
+// memory. Throws { unsupported: true } when the browser can't, so the caller falls back to a Blob.
+async function swChannel(name, size) {
+  if (!('serviceWorker' in navigator) || !window.isSecureContext || typeof TransformStream !== 'function')
+    throw { unsupported: true };
+  let reg;
+  try { reg = await navigator.serviceWorker.register('sw.js'); await navigator.serviceWorker.ready; }
+  catch (_) { throw { unsupported: true }; }
+  const sw = reg.active || navigator.serviceWorker.controller;
+  if (!sw) throw { unsupported: true };
+  const id = Date.now().toString(36) + Math.random().toString(36).slice(2);
+  const big = () => { try { return new ByteLengthQueuingStrategy({ highWaterMark: 16 << 20 }); } catch (_) { return undefined; } };
+  const ts = new TransformStream(undefined, big(), big());
+  try {
+    await new Promise((resolve, reject) => {
+      const onmsg = e => {
+        if (e.data && e.data.type === 'ready' && e.data.id === id) {
+          navigator.serviceWorker.removeEventListener('message', onmsg); resolve();
+        }
+      };
+      navigator.serviceWorker.addEventListener('message', onmsg);
+      setTimeout(() => { navigator.serviceWorker.removeEventListener('message', onmsg); reject({ unsupported: true }); }, 5000);
+      sw.postMessage({ type: 'stream', id, name, size, readable: ts.readable }, [ts.readable]);
+    });
+  } catch (e) { throw (e && e.unsupported) ? e : { unsupported: true }; }
+  const ifr = document.createElement('iframe'); ifr.hidden = true;
+  ifr.src = new URL('dl/' + id, location.href).href;
+  document.body.appendChild(ifr);
+  return { writable: ts.writable, done: () => setTimeout(() => ifr.remove(), 3000) };
+}
+
+// output: direct to a file (desktop), streaming download (Android), or a Blob (last resort)
+let blobOut = null;
+async function openSink(handle) {
+  if (handle) {
+    const w = await handle.createWritable();
+    return { kind: 'file', name: handle.name, write: u8 => w.write(u8), close: () => w.close(), abort: () => w.abort().catch(() => {}) };
+  }
+  let ch = null;
+  try { ch = await swChannel(outName(), hdr.size); } catch (e) { if (!(e && e.unsupported)) throw e; }
+  if (ch) {
+    const writer = ch.writable.getWriter();
+    return { kind: 'stream', write: u8 => writer.write(u8), close: async () => { await writer.close(); ch.done(); },
+             abort: async e => { try { await writer.abort(e); } catch (_) {} ch.done(); } };
+  }
+  const parts = [];
+  return { kind: 'blob', write: u8 => { parts.push(u8); }, close: () => { blobOut = new Blob(parts, { type: 'application/octet-stream' }); }, abort: () => {} };
+}
+
+// the patch runs in wii/worker.js (+ helper workers); its chunks are written in order, each acknowledged once written
+function runPatch(sink) {
+  return new Promise((resolve, reject) => {
+    let w;
+    try { w = new Worker('wii/worker.js'); }
+    catch (_) { reject(new Error('Browser ini tidak bisa menjalankan Web Worker.')); return; }
+    let chain = Promise.resolve(), done = false;
+    const fail = err => {
+      if (done) return; done = true; w.terminate();
+      chain.finally(() => { try { sink.abort(err); } catch (_) {} });
+      reject(err);
+    };
+    w.onerror = e => fail(new Error('Gagal menjalankan patcher' + (e.message ? ' (' + e.message + ')' : '') + '. Muat ulang halaman lalu coba lagi.'));
+    w.onmessage = e => {
+      const d = e.data;
+      if (!d || done) return;
+      if (d.type === 'chunk') {
+        const b = d.bytes;
+        chain = chain.then(async () => { if (done) return; await sink.write(b); w.postMessage({ type: 'ack', n: b.length }); })
+          .catch(err => fail(new Error('Gagal menulis ISO (' + (err && err.message || err) + '). Unduhan dibatalkan atau ruang penyimpanan penuh?')));
+      } else if (d.type === 'progress') prog(d.f);
+      else if (d.type === 'stage') stage(d.text);
+      else if (d.type === 'threads') $('mode').textContent = $('mode').textContent.replace(/ · \d+ worker$/, '') + ` · ${d.n} worker`;
+      else if (d.type === 'error') fail(new Error(d.message));
+      else if (d.type === 'done') { done = true; chain.then(() => { w.terminate(); return sink.close(); }).then(resolve, reject); }
+    };
+    w.postMessage({ type: 'start', rvz, patch, threads: threads() });
+  });
+}
+
+$('go').addEventListener('click', async () => {
+  let handle = null;
+  if (FSA) {                                    // the save dialog needs the click itself, so it comes first
+    try {
+      handle = await window.showSaveFilePicker({ suggestedName: outName(),
+        types: [{ description: 'ISO Wii', accept: { 'application/octet-stream': ['.iso'] } }] });
+    } catch (err) {
+      if (err.name === 'AbortError') return;
+      try { handle = await window.showSaveFilePicker({ suggestedName: outName() }); }
+      catch (err2) { if (err2.name === 'AbortError') return; handle = null; }
+    }
+  }
+  busy = true; refresh(); message('', '');
+  $('bar').style.width = '0'; $('stage-p').textContent = '';
+  let lock = null;
+  try { lock = await navigator.wakeLock?.request('screen'); } catch (_) {}
+  const guard = e => { e.preventDefault(); e.returnValue = ''; };
+  window.addEventListener('beforeunload', guard);
+  tStart = performance.now();
+  try {
+    blobOut = null;
+    const sink = await openSink(handle);
+    stage(sink.kind === 'file' ? 'Menyiapkan…' : 'Menyiapkan unduhan…');
+    await runPatch(sink);
+    if (sink.kind === 'blob' && blobOut) {
+      const a = document.createElement('a'); a.href = URL.createObjectURL(blobOut); a.download = outName();
+      document.body.appendChild(a); a.click(); a.remove();
+    }
+    prog(1);
+    const s = Math.round((performance.now() - tStart) / 1000);
+    $('stage-t').textContent = `Selesai dalam ${s >= 60 ? Math.floor(s / 60) + ' mnt ' : ''}${s % 60} dtk.`;
+    message(`<b>Berhasil!</b> ISO terjemahan ${sink.kind === 'file' ? 'tersimpan' : 'diunduh'} sebagai
+      <code>${esc(sink.kind === 'file' ? sink.name : outName())}</code>.${sink.kind === 'stream' ? ' Tunggu sampai unduhan di browser selesai.' : ''}
+      Buka di Dolphin (PC/Android).`, 'ok');
+  } catch (err) {
+    $('stage-t').textContent = 'Gagal.';
+    message('<b>Gagal:</b> ' + esc(err && err.message ? err.message : String(err)), 'bad');
+  } finally {
+    window.removeEventListener('beforeunload', guard);
+    try { await lock?.release(); } catch (_) {}
+    busy = false; refresh();
+  }
+});
+</script>
+</body>
+</html>
